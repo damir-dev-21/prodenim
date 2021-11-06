@@ -1,0 +1,86 @@
+.about{
+    width: 100%;
+    padding: 100px 0px;
+    &__body{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &__left{
+            width: 50%;
+            h1{
+                font-size: 60px;
+                font-family: 'Fjalla One', sans-serif;
+                margin-bottom: 25px;
+            }
+            a{
+                font-size: 25px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        &__right{
+            width: 50%;
+            p{
+                font-family:Arial, Helvetica, sans-serif;
+                line-height: 39px;
+                font-size: 22px;
+                margin-bottom: 70px;
+            }
+        }
+    }
+}
+
+.howw{
+    background-color: #222327;
+    width: 100%;
+    // height: 100vh;
+    
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 100px 0px;
+        &__title{
+            h2{
+                font-size: 50px;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        &__main{
+            margin-top: 100px;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            &__item{
+                width: 22%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                color: white;
+                padding: 30px;
+                transition: 1s;
+                
+                img{
+                    width: 80px;
+                }
+                h3{
+                    margin: 20px 0px;
+                    font-size: 22px;
+                    font-family: Arial, Helvetica, sans-serif;
+                }
+                p{
+                    font-size: 17px;
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: #A7A7A8;
+                }
+            }
+            &__item:hover{
+                background-color: #161619;
+                box-shadow: 15px 15px 30px rgb(22,22,25);
+            }
+        }
+    }
+}
