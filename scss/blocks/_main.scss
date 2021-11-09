@@ -54,7 +54,7 @@ li{
 }
 
 .main {
-    background-image: url("../assets/images/main1.jpg");
+    background-image: url("../assets/images/main3.jpeg");
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -68,9 +68,11 @@ li{
             justify-content: space-between;
             align-items: center;
             &__toggle {
-                width: 8%;
+                width: 10%;
                 display: block;
                 cursor: pointer;
+                position: relative;
+                z-index: 1000;
                 .line {
                     width: 30px;
                     height: 3px;
@@ -78,9 +80,18 @@ li{
                     background: #fff;
                 }
             }
-           
+            &__toggle.changed{
+                .line{
+                    background: #000;
+                }
+            }
+           &__title{
+               width: 80%;
+               margin: auto;
+               text-align: center;
+           }
             &__links{
-                width: 8%;
+                width: 10%;
                 display: flex;
                 justify-content: space-between;
                 i{
@@ -92,16 +103,20 @@ li{
         }
     }
     &__body {
+        width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
     }
-    &-title{
+    &__title{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
+        position: absolute;
+        top: 35%;
+        left: 45%;
         h3{
             font-family: 'Poppins';
             font-size: 7rem;
@@ -123,13 +138,56 @@ li{
         align-items: center;
         h3{
             font-size: 30px;
-            font-family: "Poppins";
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
             cursor: pointer;
-            transition: 300;
+            transition: 300ms;
         }
         h3:hover{
+            color: gainsboro;
+        }
+    }
+}
 
+.nav.open{
+    top: 0%;
+}
+
+.nav{
+    transition: 0.5s;
+    position: absolute;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    top: -100%;
+    left: 0;
+    z-index: 999;
+    &__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 100px;
+        ul{
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 50px;
+            li{
+                font-size: 23px;
+                font-family: Arial, Helvetica, sans-serif;
+                cursor: pointer;
+            }
+        }
+        i{
+            font-size: 25px;
+            margin: 0px 10px;
+            cursor: pointer;
         }
     }
 }
