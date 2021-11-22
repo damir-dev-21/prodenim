@@ -12,7 +12,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="startGallery()">
     <div>
         <div class="overlay"></div>
         <section class="main main-gl">
@@ -34,6 +34,11 @@
                                 <i class="fab fa-instagram"></i>
                                 <i class="fab fa-facebook"></i>
                                 <i class="fab fa-twitter"></i>
+
+                                <div class="lang">
+                                    <p onclick="changeLangGal()">Eng</p>
+                                    <p onclick="changeLangRu()">Рус</p>
+                                </div>
                             </div>
                         </div>
                     </header>
@@ -43,7 +48,7 @@
                                 <!-- <div class="close">
                                     <i class="fas fa-times"></i>  
                                 </div> -->
-                                <ul>
+                                <ul class="nav-list">
                                     <li><a href="../index.html">Главная</a> </li>
                                     <li><a href="./products.html">Продукция</a></li>
                                     <li><a href="./about.html">О Компании</a></li>
@@ -54,6 +59,11 @@
                                     <i class="fab fa-instagram"></i>
                                     <i class="fab fa-facebook"></i>
                                     <i class="fab fa-twitter"></i>
+
+                                    <div class="lang">
+                                        <p onclick="changeLang()">Eng</p>
+                                        <p onclick="changeLangRu()">Рус</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -133,7 +143,7 @@
                         </div>
                     </div>
                     <div class="footer__body__right">
-                        <ul>
+                        <ul class="nav-list">
                             <li><a href="../index.html">Главная</a> </li>
                             <li><a href="./products.html">Продукция</a></li>
                             <li><a href="./about.html">О Компании</a></li>
@@ -161,6 +171,8 @@
     <script src="https://kit.fontawesome.com/8c5f8983b2.js" crossorigin="anonymous"></script>
     <script src="../script/jquery-3.3.1.min.js"></script>
     <script src="../script/other.js"></script>
+    <script src="../script/lang.js"></script>
+
     <script src="../script/index.js"></script>
 </body>
 
