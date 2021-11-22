@@ -1,221 +1,335 @@
-@media (max-width:1400px){
-    .container{
+@media (max-width: 1400px) {
+    .container {
         padding: 0px 50px;
     }
 }
 
-@media (max-width:1300px){
-    .main__title h3{
+@media (max-width: 1300px) {
+    .main__title h3 {
         font-size: 6rem;
     }
-    .main__title a{
+    .main__title a {
         font-size: 21px;
     }
-    .main__nav__item h3{
+    .main__nav__item h3 {
         font-size: 25px;
+    }
+
+    .contacts-pg .contacts-pg__body__maps .map__item .map__content__text {
+        width: 40%;
     }
 }
 
-@media (max-width:1200px) {
-    .howw__body__main__item{
+@media (max-width: 1200px) {
+    .howw__body__main__item {
         width: 35%;
     }
 }
 
-@media (max-width:1000px) {
-    .howw__body__main__item{
-        p{
+@media (max-width: 1100px) {
+    .contacts-pg .contacts-pg__body__maps .map__item .map__content__text {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .howw__body__main__item {
+        p {
             font-size: 15px;
         }
-        h3{
+        h3 {
             font-size: 20px;
         }
     }
 
-    .category__body__item{
+    .category__body__item {
         flex-direction: column;
-        &__left{
+        &__left {
             width: 100%;
             margin: 30px auto;
         }
-        &__right{
+        &__right {
             display: none;
         }
     }
+
+    .main__body .main__title h2 {
+        font-size: 4.5rem;
+    }
 }
 
-@media (max-width:900px){
-    .main .header__body__links{
+@media (max-width: 900px) {
+    iframe {
+        width: 100%;
+    }
+
+    .contacts-pg .contacts-pg__body__maps .map__item .map__content__text {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .main .header__body__links {
         width: 15%;
     }
-    .main .header__body__toggle{
+    .main .header__body__toggle {
         width: 15%;
     }
-    
-    .about__body{
+
+    .about__body {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        &__left{
-           
+        &__left {
             width: 100%;
-
         }
-        &__right{
+        &__right {
             width: 100%;
             margin-top: 50px;
         }
     }
+
+    .contacts-pg__body__maps .map__item .map__content {
+        flex-direction: column;
+        .map__content__map {
+            width: 100%;
+        }
+    }
 }
 
-@media (max-width:800px){
-    .main__title h3{
+@media (max-width: 800px) {
+    .main__title h3 {
         font-size: 5rem;
     }
-    .main__title a{
+    .main__title a {
         font-size: 19px;
     }
-    .main__nav__item h3{
+    .main__nav__item h3 {
         font-size: 22px;
     }
-    .howw__body__title h2{
+    .howw__body__title h2 {
         font-size: 40px;
     }
-    .howw__body__main__item{
+    .howw__body__main__item {
         width: 50%;
     }
 }
 
-@media (max-width:650px){
-    .main .header__body__links{
-        width: 25%;
+@media (max-width: 750px) {
+    .products .products__main__item .products-list__item {
+        width: 35%;
+        margin: 50px 0px;
     }
-    .main .header__body__toggle{
-        width: 25%;
+    .products .products__main__item .product-head a {
+        padding: 7px;
     }
-    .about__body{
-        &__left{
-           h1{
-               font-size: 40px;
-           }
-           a{
-               font-size: 20px;
-           }
+    .products .products__main__item:nth-child(3) .products-list__item {
+        width: 28%;
+    }
+}
+
+@media (max-width: 650px) {
+    .contacts-pg__body__form .form__form .form__row{
+        flex-direction: column;
+        width: 100%;
+        input{
+            width: 100%;
+            margin: 10px 0px;
         }
-        &__right{
-            P{
+        
+    }
+    
+    .contacts-pg__body__form .form__title h2{
+        display: none;
+    }
+    .contacts-pg__body__form .form__title__loc{
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .contacts-pg__body__form .form__title div{
+        width: 45%;
+    }
+    .main .header__body__links {
+        width: 25%;
+    }
+    .main .header__body__toggle {
+        width: 25%;
+    }
+    .about__body {
+        &__left {
+            h1 {
+                font-size: 40px;
+            }
+            a {
+                font-size: 20px;
+            }
+        }
+        &__right {
+            P {
                 font-size: 20px;
             }
         }
     }
 
-    .howw__body__title h2{
+    .howw__body__title h2 {
         font-size: 35px;
     }
-    .howw__body__main__item{
+    .howw__body__main__item {
         width: 100%;
     }
 }
 
-@media (max-width:600px){
-    .footer__body__left .footer-text h3{
+@media (max-width: 600px) {
+    .footer__body__left .footer-text h3 {
         font-size: 25px;
     }
-    .footer__body__right ul li{
+    .footer__body__right ul li {
         font-size: 19px;
     }
 }
 
-@media (max-width:550px){
-    .main .header__body__links i{
+@media (max-width: 550px) {
+    .main .header__body__links i {
         font-size: 17px;
     }
-    .category__body__item__left .item__left-text p{
+    .category__body__item__left .item__left-text p {
         font-size: 1.1rem;
     }
-    .category__body__item__left .item__left-text h3{
+    .category__body__item__left .item__left-text h3 {
         font-size: 25px;
     }
-    
 }
 
-@media (max-width:500px){
-    .footer__body{
+@media (max-width: 500px) {
+    .contacts-pg__body__form .form__title{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacts-pg__body__form .form__title div{
+        width: 100%;
+    }
+    .form__title__mes{
+        margin-top: 10px;
+    }
+    .products .products__main__item:nth-child(3) .products-list__item {
+        width: 45%;
+    }
+    .products .products__main__item .products-list__item {
+        width: 45%;
+    }
+    .main__body .main__title h2 {
+        font-size: 3rem;
+    }
+    .footer__body {
         flex-direction: column;
         align-items: center;
     }
-    .footer__body__left{
+    .footer__body__left {
         width: 100%;
     }
-    .footer__body__right{
+    .footer__body__right {
         width: 100%;
         margin-top: 50px;
     }
-    .main .header__body__title img{
+    .main .header__body__title img {
         width: 100px;
     }
-    .category__body__item{
+    .category__body__item {
         padding: 0px 20px;
     }
-    .about__body{
-        &__left{
-           h1{
-               font-size: 30px;
-           }
-           a{
-               font-size: 15px;
-           }
+    .about__body {
+        &__left {
+            h1 {
+                font-size: 30px;
+            }
+            a {
+                font-size: 15px;
+            }
         }
-        &__right{
+        &__right {
             margin-top: 20px;
-            p{
+            p {
                 font-size: 14px;
             }
         }
     }
-    
+
+    .products .products__main__item .products-list__item h3 {
+        font-size: 17px;
+    }
+
+    .products .products__main__item .product-head h3 {
+        font-size: 28px;
+    }
+
+    .products .products__main__item .product-head a {
+        font-size: 11px;
+    }
+
+    .footer__body__left .footer-text h3 {
+        font-size: 18px;
+    }
 }
 
-@media (max-width:450px){
-    .howw__body__title h2{
+@media (max-width: 450px) {
+    .howw__body__title h2 {
         font-size: 30px;
     }
-    .about__body{
-       
-        &__right{
-            img{
+    .about__body {
+        &__right {
+            img {
                 width: 250px;
             }
         }
     }
+
+    .products .products__main__item:nth-child(3) .products-list__item {
+        width: 100%;
+    }
+    .products .products__main__item .products-list__item {
+        width: 100%;
+    }
+
+    .products .products__main__item .product-head h3 {
+        font-size: 25px;
+    }
+
+    .products .products__main__item .product-head a p {
+        display: none;
+    }
+    .products .products__main__item .product-head a img {
+        margin: 0;
+        width: 20px;
+    }
 }
 
-
-@media (max-width:415px){
-    .main .header__body__links i{
+@media (max-width: 415px) {
+    .main .header__body__links i {
         font-size: 13px;
     }
-    
-    
+
+    .about-pg .about-pg__body__item h2 {
+        font-size: 40px;
+    }
 }
 
-@media (max-width:390){
-    
-    .about__body{
-        &__left{
-           h1{
-               font-size: 30px;
-           }
-           a{
-               font-size: 15px;
-           }
+@media (max-width: 390) {
+    .about__body {
+        &__left {
+            h1 {
+                font-size: 30px;
+            }
+            a {
+                font-size: 15px;
+            }
         }
-        &__right{
+        &__right {
             margin-top: 20px;
-            p{
+            p {
                 font-size: 10px;
             }
         }
     }
-    
 }
